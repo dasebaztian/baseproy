@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-04T02:16:22.434Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" etag="fQqgO8SCjhHtVph6v1Hz" version="21.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-04T02:22:03.763Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" etag="7UQJg1gpEGDODV5TAWDm" version="21.1.2" type="github">
   <diagram name="Página-1" id="vT6C2PI068epoJccIRs5">
     <mxGraphModel dx="1763" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -35,7 +35,7 @@
           <mxGeometry x="-622" y="382" width="60" height="24" as="geometry" />
         </mxCell>
         <mxCell id="h0BoNwNPt8mU9W3nCbxn-8" value="numero_factura" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
-          <mxGeometry x="-790" y="374" width="100" height="40" as="geometry" />
+          <mxGeometry x="-835" y="394" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="h0BoNwNPt8mU9W3nCbxn-9" value="años de experiencia" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="-1100" y="485" width="100" height="40" as="geometry" />
@@ -50,7 +50,7 @@
           <mxGeometry x="-1070" y="445" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="h0BoNwNPt8mU9W3nCbxn-13" value="comprobante" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-700" y="348" width="80" height="34" as="geometry" />
+          <mxGeometry x="-790" y="360" width="80" height="34" as="geometry" />
         </mxCell>
         <mxCell id="h0BoNwNPt8mU9W3nCbxn-14" value="duracion" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="-360" y="440" width="100" height="40" as="geometry" />
@@ -224,7 +224,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="h0BoNwNPt8mU9W3nCbxn-54" value="calificación empleo" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-790" y="430" width="70" height="30" as="geometry" />
+          <mxGeometry x="-820" y="440" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="h0BoNwNPt8mU9W3nCbxn-55" value="calificación empleado" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="-610" y="414" width="84" height="40" as="geometry" />
@@ -323,6 +323,15 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-680" y="500" as="sourcePoint" />
             <mxPoint x="-520" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h0BoNwNPt8mU9W3nCbxn-77" value="evidencia de trabajo" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h0BoNwNPt8mU9W3nCbxn-78" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="h0BoNwNPt8mU9W3nCbxn-49" target="h0BoNwNPt8mU9W3nCbxn-77">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-820" y="580" as="sourcePoint" />
+            <mxPoint x="-660" y="580" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
