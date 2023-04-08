@@ -1,0 +1,127 @@
+create table ACCESOS
+(
+    USUARIO    varchar(20) null,
+    CONTRASEÑA varchar(20) not null
+);
+
+create table ACCESO_CANDIDATO
+(
+    ID_CANDIDATO int         not null,
+    USUARIO      varchar(20) not null
+);
+
+create table ACCESO_EMPLEADOR
+(
+    ID_EMPLEADOR int         not null,
+    USUARIO      varchar(20) not null
+);
+
+create table APLICA_CANDIDATO_A_EMPLEO
+(
+    ID_CANDIDATO int                     not null,
+    ID_EMPLEO    int                     null,
+    ACEPTADO     varchar(2) default 'NO' null
+);
+
+create table CANDIDATO_CORREO
+(
+    ID_CANDIDATO int         not null,
+    CORREO       varchar(50) not null
+);
+
+create table CERTIFICACIONES
+(
+    CERTIFICACION varchar(50) not null,
+    ID_CANDIDATO  int         not null
+        primary key
+);
+
+create table DATOS_CANDIDATOS
+(
+    CORREO      varchar(50) not null,
+    FOTO        varchar(10) null,
+    NU_TELEFONO int         null
+);
+
+create table DATOS_EMPLEADOR
+(
+    RFC                 varchar(12) not null,
+    NOMBRE              varchar(20) null,
+    `TIPO DE EMPLEADOR` varchar(10) not null
+);
+
+create table DATOS_EMPLEO_APLICA
+(
+    NOMBRE          varchar(30)  not null,
+    CARACTERISTICAS varchar(200) null,
+    DURACION        int          not null
+);
+
+create table DATOS_EMPLEO_TRABAJA
+(
+    NOMBRE_DEL_PUESTO   varchar(25) not null,
+    CARACTERISTICAS     varchar(30) null,
+    DURACION            int         null,
+    CALIFICACION_EMPLEO int         null
+);
+
+create table EMPLEADOR_RFC
+(
+    ID_EMPLEADOR int         not null,
+    RFC          varchar(12) not null
+);
+
+create table EMPLEO_NOMBRE
+(
+    ID_EMPLEO       int         not null,
+    NOMRE_DELPUESTO varchar(30) not null
+);
+
+create table EVIDENCIA_PAGO_TRABAJA
+(
+    NUMERO_FACTURA        int         not null,
+    COMPROBANTE           varchar(10) not null,
+    CANTIDAD              float       not null,
+    EVIDENCIA_TRABAJO     varchar(20) not null,
+    CALIFICACION_EMPLEADO int         null
+);
+
+create table EXPERIENCIA_CANDIDATO
+(
+    ID_CANDIDATO     int not null,
+    AÑOS_EXPERIENCIA int not null
+);
+
+create table HAB_BLANDAS
+(
+    HABILIDAD    varchar(20) not null,
+    ID_CANDIDATO int         not null
+        primary key
+);
+
+create table HAB_TECNICAS
+(
+    HABILIDAD    varchar(20) not null,
+    ID_CANDIDATO int         not null
+        primary key
+);
+
+create table OFRECE_EMPLEO
+(
+    ID_EMPLEO    int not null,
+    ID_EMPLEADOR int not null
+);
+
+create table TRABAJA_CANDIDATO_EMPLEO
+(
+    ID_CANDIDATO int not null,
+    ID_EMPLEO    int not null
+);
+
+create table TRABAJA_VERIFICACION
+(
+    ID_EMPLEO            int         not null,
+    NOMBRE_DEL_PUESTO    varchar(25) not null,
+    NUMERO_FACTURA       int         not null,
+    EVIDENCIA_DE_TRABAJO varchar(30) not null
+);
