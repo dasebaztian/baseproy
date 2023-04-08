@@ -1,65 +1,76 @@
 create table ACCESOS
 (
-    USUARIO    varchar(20) null,
+    USUARIO    varchar(20) not null primary key,
     CONTRASEÑA varchar(20) not null
 );
 
 create table ACCESO_CANDIDATO
 (
-    ID_CANDIDATO int         not null,
-    USUARIO      varchar(20) not null
+    ID_CANDIDATO int not null, foreign key (ID_CANDIDATO) references CANDIDATO_CORREO(ID_CANDIDATO),
+    USUARIO varchar(20) not null, foreign key (USUARIO) references ACCESOS(USUARIO)
 );
 
 create table ACCESO_EMPLEADOR
 (
-    ID_EMPLEADOR int         not null,
-    USUARIO      varchar(20) not null
+    ID_EMPLEADOR int not null, foreign key (ID_EMPLEADOR) references EMPLEADOR_RFC(ID_EMPLEADOR),
+    USUARIO varchar(20) not null, foreign key (USUARIO) references  ACCESOS(USUARIO)
 );
 
 create table APLICA_CANDIDATO_A_EMPLEO
 (
-    ID_CANDIDATO int                     not null,
-    ID_EMPLEO    int                     null,
-    ACEPTADO     varchar(2) default 'NO' null
+    ID_CANDIDATO int not null, foreign key (ID_CANDIDATO) references CANDIDATO_CORREO(ID_CANDIDATO),
+    ID_EMPLEO int null, foreign key (ID_EMPLEO) references EMPLEO_NOMBRE(ID_EMPLEO),
+    ACEPTADO     varchar(2) default 'NO' not null
 );
 
 create table CANDIDATO_CORREO
 (
-    ID_CANDIDATO int         not null,
-    CORREO       varchar(50) not null
+    ID_CANDIDATO int         not null primary key ,
+    CORREO       varchar(50) not null, foreign key (CORREO) references DATOS_CANDIDATOS(CORREO)
 );
 
 create table CERTIFICACIONES
 (
     CERTIFICACION varchar(50) not null,
-    ID_CANDIDATO  int         not null
-        primary key
+    ID_CANDIDATO  int not null, foreign key (ID_CANDIDATO) references CANDIDATO_CORREO(ID_CANDIDATO)
+);
+
+create table HAB_BLANDAS
+(
+    HABILIDAD    varchar(20) not null,
+    ID_CANDIDATO  int not null, foreign key (ID_CANDIDATO) references CANDIDATO_CORREO(ID_CANDIDATO)
+);
+
+create table HAB_TECNICAS
+(
+    HABILIDAD    varchar(20) not null,
+    ID_CANDIDATO  int not null, foreign key (ID_CANDIDATO) references CANDIDATO_CORREO(ID_CANDIDATO)
 );
 
 create table DATOS_CANDIDATOS
 (
-    CORREO      varchar(50) not null,
+    CORREO      varchar(50) not null primary key ,
     FOTO        varchar(10) null,
     NU_TELEFONO int         null
 );
 
 create table DATOS_EMPLEADOR
 (
-    RFC                 varchar(12) not null,
+    RFC                 varchar(12) not null primary key ,
     NOMBRE              varchar(20) null,
-    `TIPO DE EMPLEADOR` varchar(10) not null
+    TIPO_DE_EMPLEADOR varchar(10) not null
 );
 
 create table DATOS_EMPLEO_APLICA
 (
-    NOMBRE          varchar(30)  not null,
+    NOMBRE_DEL_PUESTO         varchar(30)  not null primary key ,
     CARACTERISTICAS varchar(200) null,
     DURACION        int          not null
 );
 
 create table DATOS_EMPLEO_TRABAJA
 (
-    NOMBRE_DEL_PUESTO   varchar(25) not null,
+    NOMBRE_DEL_PUESTO   varchar(25) not null primary key ,
     CARACTERISTICAS     varchar(30) null,
     DURACION            int         null,
     CALIFICACION_EMPLEO int         null
@@ -67,61 +78,50 @@ create table DATOS_EMPLEO_TRABAJA
 
 create table EMPLEADOR_RFC
 (
-    ID_EMPLEADOR int         not null,
-    RFC          varchar(12) not null
+    ID_EMPLEADOR int         not null primary key ,
+    RFC varchar(12) not null, foreign key (RFC) references DATOS_EMPLEADOR(RFC)
 );
 
 create table EMPLEO_NOMBRE
 (
-    ID_EMPLEO       int         not null,
-    NOMRE_DELPUESTO varchar(30) not null
-);
-
-create table EVIDENCIA_PAGO_TRABAJA
-(
-    NUMERO_FACTURA        int         not null,
-    COMPROBANTE           varchar(10) not null,
-    CANTIDAD              float       not null,
-    EVIDENCIA_TRABAJO     varchar(20) not null,
-    CALIFICACION_EMPLEADO int         null
+    ID_EMPLEO       int         not null primary key,
+    NOMRE_DEL_PUESTO varchar(30) not null, foreign key (NOMRE_DEL_PUESTO) references DATOS_EMPLEO_APLICA(NOMBRE_DEL_PUESTO)
 );
 
 create table EXPERIENCIA_CANDIDATO
 (
-    ID_CANDIDATO     int not null,
+    ID_CANDIDATO     int not null, foreign key (ID_CANDIDATO) references CANDIDATO_CORREO(ID_CANDIDATO),
     AÑOS_EXPERIENCIA int not null
 );
 
-create table HAB_BLANDAS
-(
-    HABILIDAD    varchar(20) not null,
-    ID_CANDIDATO int         not null
-        primary key
-);
-
-create table HAB_TECNICAS
-(
-    HABILIDAD    varchar(20) not null,
-    ID_CANDIDATO int         not null
-        primary key
-);
 
 create table OFRECE_EMPLEO
 (
-    ID_EMPLEO    int not null,
-    ID_EMPLEADOR int not null
+    ID_EMPLEO    int not null, foreign key (ID_EMPLEO) references EMPLEO_NOMBRE(ID_EMPLEO),
+    ID_EMPLEADOR int not null, foreign key (ID_EMPLEADOR) references EMPLEADOR_RFC(ID_EMPLEADOR)
 );
 
 create table TRABAJA_CANDIDATO_EMPLEO
 (
-    ID_CANDIDATO int not null,
-    ID_EMPLEO    int not null
+    ID_CANDIDATO int not null, foreign key (ID_CANDIDATO) references CANDIDATO_CORREO(ID_CANDIDATO),
+    ID_EMPLEO int null, foreign key (ID_EMPLEO) references EMPLEO_NOMBRE(ID_EMPLEO)
 );
 
 create table TRABAJA_VERIFICACION
 (
-    ID_EMPLEO            int         not null,
-    NOMBRE_DEL_PUESTO    varchar(25) not null,
-    NUMERO_FACTURA       int         not null,
-    EVIDENCIA_DE_TRABAJO varchar(30) not null
+    ID_EMPLEO int not null, FOREIGN KEY (ID_EMPLEO) REFERENCES EMPLEO_NOMBRE(ID_EMPLEO) ,
+    NOMBRE_DEL_PUESTO varchar(25) not null, foreign key (NOMBRE_DEL_PUESTO) references DATOS_EMPLEO_TRABAJA(NOMBRE_DEL_PUESTO),
+    NUMERO_FACTURA int not null, foreign key (NUMERO_FACTURA) references EVIDENCIA_PAGO_TRABAJA(NUMERO_FACTURA),
+    EVIDENCIA_DE_TRABAJO varchar(30) not null, FOREIGN KEY (EVIDENCIA_DE_TRABAJO) REFERENCES EVIDENCIA_TRABAJO_ANTIGUOS(EVIDENCIA_DE_TRABAJO)
+);
+
+create table EVIDENCIA_PAGO_TRABAJA(
+    NUMERO_FACTURA int not null PRIMARY KEY ,
+    COMPROBANTE VARCHAR(12) NOT NULL,
+    CANTIDAD FLOAT NOT NULL
+);
+create table EVIDENCIA_TRABAJO_ANTIGUOS(
+    EVIDENCIA_DE_TRABAJO varchar(30) not null PRIMARY KEY,
+    CALIFICACION_EMPLEADO INT not null
+
 );
