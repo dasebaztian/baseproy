@@ -1,0 +1,195 @@
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('PEAS99', 'Sam Parker Alexa', 'Fisica');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('CSMI800503IF', 'Microsoft SA CV', 'Moral');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('RIPY0210183Y', 'Yesenia Rios Pereira', 'Fisica');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('PATC820715LU', 'Cisco Packet Tracer', 'Moral');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('CISH960205DT', 'Huawei China Society', 'Moral');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('GAKP8909018I', 'Pedro Garcia Kla', 'Fisica');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('TOPK010212EG', 'Khvicha Tomp Perez', 'Fisica');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('AOPJ850305CN', 'Joe Anoai Perez', 'Fisica');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('SCTE0404101C', 'Tesla SA CV', 'Moral');
+
+INSERT INTO DATOS_EMPLEADOR (`RFC`, `NOMBRE`, `TIPO_DE_EMPLEADOR`) VALUES ('COCA670215CR', 'Adidas COP CV', 'Moral');
+
+#ASIGNACION De ID_EMPLEADOR
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101001', 'COCA670215CR');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101002', 'PATC820715LU');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101003', 'CISH960205DT');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101004', 'AOPJ850305CN');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101005', 'TOPK010212EG');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101006', 'CSMI800503IF');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101007', 'GAKP8909018I');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101008', 'PEAS99');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101009', 'SCTE0404101C');
+
+INSERT INTO EMPLEADOR_RFC (`ID_EMPLEADOR`, `RFC`) VALUES ('101010', 'RIPY0210183Y');
+
+#CREACION USUARIOS Y CONTRASEÑAS
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('user1234', 'user1234');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('testuser1', 'testuser1');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('experiment_user', 'experiment_user');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('username_test', 'username_test');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('user_2023', 'user_2023');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('user_xyz', 'user_xyz');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('sample_user', 'sample_user');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('user01', 'user01');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('user_testing', 'user_testing');
+
+INSERT INTO ACCESOS (`USUARIO`, `CONTRASEÑA`) VALUES ('user_experiment', 'user_experiment');
+
+#ENLANCE ID EMPLEADOR USUARIO
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101004', 'experiment_user');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101003', 'sample_user');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101001', 'testuser1');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101006', 'user01');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101007', 'user1234');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101002', 'username_test');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101008', 'user_2023');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101010', 'user_experiment');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101009', 'user_testing');
+
+INSERT INTO ACCESO_EMPLEADOR (`ID_EMPLEADOR`, `USUARIO`) VALUES ('101005', 'user_xyz');
+
+#************************CREACION DE EMPLEOS************************
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Desarrollador de software', 'esta es una posición clave en cualquier empresa de tecnología y se requiere para diseñar, crear y mantener software de alta calidad.', '3');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Administrador de BD', 'Los administradores de bases de datos son responsables de mantener y administrar bases de datos, incluyendo la configuración, el mantenimiento y la seguridad.', '3');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Ing de software', 'Los ing de software son responsables de diseñar, desarrollar y probar software. También pueden trabajar en la mejora de la eficiencia de los procesos de software y la optimización de la funcionalidad.', '2');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Analista de bases de datos', 'Los analistas de bases de datos trabajan para recopilar y analizar grandes cantidades de datos para identificar patrones y tendencias.', '4');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Arquitecto de software', 'Este puesto implica la creación y mantenimiento de sistemas de software de alta calidad, incluyendo la toma de decisiones técnicas y de diseño.', '5');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Desarrollador de BD', ' los desarrolladores de bases de datos son responsables de diseñar y desarrollar bases de datos y sistemas de gestión de bases de datos.', '2');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Ingeniero de redes', 'Los ingenieros de redes son responsables de diseñar, implementar y mantener redes informáticas y de telecomunicaciones.', '4');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Ingeniero de BD NoSQL', 'Los ingenieros de bases de datos NoSQL trabajan con bases de datos que no utilizan el modelo relacional tradicional, sino que se basan en otras estructuras de datos, como documentos o grafos.', '5');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Diseñador UX/UI', 'Los diseñadores UX/UI son responsables de crear interfaces de usuario atractivas y fáciles de usar para aplicaciones y sitios web.', '3');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Esp. en seguridad de BD', 'los especialistas en seguridad de bases de datos son responsables de proteger las bases de datos contra el acceso no autorizado y la actividad malintencionada.', '3');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Ing. de IA', 'Los ingenieros de inteligencia artificial trabajan para crear sistemas inteligentes y autónomos utilizando técnicas de aprendizaje automático y procesamiento de lenguaje natural.', '4');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Piloto/a', 'Estamos buscando un/a piloto/a debe tener una licencia y un mínimo de horas de vuelo. Será responsable de operar aviones y helicópteros, y garantizar la seguridad de los pasajeros y la tripulación.', '2');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Mecánico/a de automóviles', 'Mecánico/a con exp. en reparación y mantenimiento de autos, habilidades de diagnóstico y trabajo en equipo. Responsable de vehículos en taller.', '1');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Agente de bienes raíces', 'Buscamos agente de bienes raíces con experiencia en ventas y relaciones públicas. Licencia para vender/comprar en nuestra área y conocimiento del mercado inmobiliario local.', '1');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Electricista', 'Estamos buscando un/a electricista con licencia y experiencia en la instalación y mantenimiento de sistemas eléctricos. Debe tener habilidades de resolución de problemas y para trabajar en equipo.', '3');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Abogado/a', 'Se busca abogado/a con licencia y habilidades comunicativas para trabajar en equipo. Representarnos y brindar asesoramiento legal.', '5');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Traductor/a', ' Estamos buscando un/a traductor/a con experiencia en traducción de idiomas. Debe tener excelentes habilidades de comunicación y capacidad para trabajar en equipo.', '2');
+
+INSERT INTO DATOS_EMPLEO_APLICA (`NOMBRE_DEL_PUESTO`, `CARACTERISTICAS`, `DURACION`) VALUES ('Ingeniero de Redes CCNA', 'Los ingenieros de redes son responsables de diseñar, implementar y mantener redes informáticas y de telecomunicaciones.', '2');
+
+#Asignacion de ID EMPLEOS
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1001', 'Traductor/a');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1002', 'Agente de bienes raíces');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1003', 'Desarrollador de software');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1004', 'Electricista');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1005', 'Piloto/a');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1006', 'Arquitecto de software');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1007', 'Administrador de BD');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1008', 'Analista de bases de datos');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1009', 'Desarrollador de BD');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1010', 'Diseñador UX/UI');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1011', 'Esp. en seguridad de BD');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1012', 'Ing de software');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1013', 'Ingeniero de BD NoSQL');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1014', 'Ing. de IA');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1015', 'Ingeniero de redes');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1016', 'Mecánico/a de automóviles');
+
+INSERT INTO EMPLEO_NOMBRE (`ID_EMPLEO`, `NOMRE_DEL_PUESTO`) VALUES ('1017', 'Abogado/a');
+
+#*********************ENLACE DE EMPLEADOR CON EMPLEO*********************
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1001', '101010');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1002', '101001');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1003', '101006');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1004', '101008');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1005', '101007');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1006', '101003');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1007', '101002');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1008', '101005');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1009', '101004');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1010', '101009');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1011', '101006');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1012', '101002');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1013', '101001');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1014', '101003');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1015', '101009');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1016', '101004');
+
+INSERT INTO OFRECE_EMPLEO (`ID_EMPLEO`, `ID_EMPLEADOR`) VALUES ('1017', '101010');
