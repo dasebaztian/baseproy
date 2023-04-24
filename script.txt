@@ -51,7 +51,8 @@ create table DATOS_CANDIDATOS
 (
     CORREO      varchar(50) not null primary key ,
     FOTO        varchar(10) null,
-    NU_TELEFONO int         null
+    NU_TELEFONO int         null,
+    NOMBRE varchar(100) not null, primary key
 );
 
 create table DATOS_EMPLEADOR
@@ -63,9 +64,10 @@ create table DATOS_EMPLEADOR
 
 create table DATOS_EMPLEO_APLICA
 (
-    NOMBRE_DEL_PUESTO         varchar(30)  not null primary key ,
+    NOMBRE_DEL_PUESTO         varchar(30)  not null,
     CARACTERISTICAS varchar(200) null,
-    DURACION        int          not null
+    DURACION        int          not null,
+    index NOMBRE_DEL_PUESTO(NOMBRE_DEL_PUESTO)
 );
 
 create table DATOS_EMPLEO_TRABAJA
