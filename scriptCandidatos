@@ -1,0 +1,176 @@
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('crepper', 'W2knWS5Y');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('zombie', 'gSe2ljXjYmpA');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('mrbeast', 'CAFsgB05Ma');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('araña', '3kYXQUbKbPk');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('monito', 'WFqlLKG0x');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('gordito', 'Z8SoFbmFZFEV');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('cerdo', 'tWtq8CJ');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('karl', 'gPBvv0oYoOl');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('vegetta777', 'spMX9D3Jkm');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('willyrex', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('rociodta', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('rivers_gg', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('elmariana', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('cocks', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('paponas', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('yerimua', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('aldahir', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('samuel', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('vanessa', 'CO4tN58');
+insert into ACCESOS (USUARIO, CONTRASEÑA) values ('mauricio', 'CO4tN58');
+
+
+
+
+
+
+
+
+
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('crepper@icloud.com', 'avatar6.jpg', '9807852783', 'Natalia Romero Torres');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('zombie@protonmail.com', 'avatar18.jpg', '3919717083', 'Sofía García López');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('mrbeast@mail.com', 'avatar16.jpg', '9932710502', 'José Ramírez Sánchez');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('araña@protonmail.com', 'avatar7.jpg', '8099946533', 'Carmen Torres Morales');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('monito@protonmail.com', 'avatar6.jpg', '9479081502', 'Antonio Medina Castro');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('gordito@yahoo.com', 'avatar3.jpg', '5755572030', 'José Ramírez Sánchez');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('cerdo@gmail.com', 'avatar9.jpg', '1319487244', 'Manuel Flores Ortiz');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('karl@outlook.com', 'avatar18.jpg', '8824163611', 'Francisco Gómez Sánchez');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('vegetta777@mail.com', 'avatar12.jpg', '2668097036', 'Isabel Ortiz Flores');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('willyrex@aol.com', 'avatar11.jpg', '4023412040', 'Pedro Pérez Martínez');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('rociodta@outlook.com', 'avatar7.jpg', '5665858990', 'Diego Ruiz Hernández');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('rivers_gg@inbox.com', 'avatar14.jpg', '1545465323', 'Manuel Flores Ortiz');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('elmariana@yahoo.com', 'avatar3.jpg', '9216699560', 'Isabel Ortiz Flores');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('cocks@outlook.com', 'avatar2.jpg', '9814919800', 'Antonio Medina Castro');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('paponas@yahoo.com', 'avatar18.jpg', '4705675175', 'Manuel Flores Ortiz');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('yerimua@live.com', 'avatar20.jpg', '3265661743', 'Javier Gutiérrez Ortiz');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('aldahir@live.com', 'avatar13.jpg', '4507689551', 'Laura Jiménez Castro');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('samuel@mail.com', 'avatar6.jpg', '3657850687', 'Isabel Ortiz Flores');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('vanessa@outlook.com', 'avatar20.jpg', '3369766138', 'Carlos Fernández Gómez');
+insert into DATOS_CANDIDATOS (CORREO, FOTO, NU_TELEFONO, NOMBRE) values ('mauricio@inbox.com', 'avatar7.jpg', '5388601929', 'Manuel Flores Ortiz');
+
+
+
+
+
+
+
+
+
+
+
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('1', 'crepper@icloud.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('2', 'zombie@protonmail.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('3', 'mrbeast@mail.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('4', 'araña@protonmail.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('5', 'monito@protonmail.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('6', 'gordito@yahoo.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('7', 'cerdo@gmail.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('8', 'karl@outlook.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('9', 'vegetta777@mail.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('10', 'willyrex@aol.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('11', 'rociodta@outlook.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('12', 'rivers_gg@inbox.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('13', 'elmariana@yahoo.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('14', 'cocks@outlook.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('15', 'paponas@yahoo.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('16', 'yerimua@live.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('17', 'aldahir@live.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('18', 'samuel@mail.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('19', 'vanessa@outlook.com');
+insert into CANDIDATO_CORREO (ID_CANDIDATO,CORREO) values ('20', 'mauricio@inbox.com');
+
+
+
+
+
+
+
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('1', 'crepper');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('2', 'zombie');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('3', 'mrbeast');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('4', 'araña');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('5', 'monito');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('6', 'gordito');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('7', 'cerdo');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('8', 'karl');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('9', 'vegetta777');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('10', 'willyrex');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('11', 'rociodta');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('12', 'rivers_gg');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('13', 'elmariana');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('14', 'cocks');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('15', 'paponas');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('16', 'yerimua');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('17', 'aldahir');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('18', 'samuel');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('19', 'vanessa');
+insert into ACCESO_CANDIDATO (ID_CANDIDATO, USUARIO) values ('20', 'mauricio');
+
+
+
+
+
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (1, 1);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (2, 5);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (3, 3);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (4, 0);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (5, 4);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (6, 1);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (7, 2);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (8, 2);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (9, 2);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (10, 5);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (11, 4);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (12, 10);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (13, 7);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (14, 5);
+insert into EXPERIENCIA_CANDIDATO (ID_CANDIDATO, AÑOS_EXPERIENCIA) values (15, 3);
+
+
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ( 'COMUNICACION CLARA', '1');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('RESPONSABILIDAD', '2');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('TRABAJO EN EQUIPO', '3');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ( 'LIDERAZGO', '4');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('LIDERAZGO', '5');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('COMUNICACION CLARA', '6' );
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('RESPONSABILIDAD', '7');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('COMUNICACION CLARA', '8');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('LIDERAZGO', '9');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('TRABAJO EN EQUIPO', '10');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('TRABAJO EN EQUIPO', '11');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('TRABAJO EN EQUIPO', '1');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('TRABAJO EN EQUIPO', '12');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('RESPONSABILIDAD', '15');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('RESPONSABILIDAD', '13');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('LIDERAZGO', '14');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('LIDERAZGO', '15');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('LIDERAZGO', '17');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('COMUNICACION CLARA', '16');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('RESPONSABILIDAD', '17');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('TRABAJO EN EQUIPO', '19');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('LIDERAZGO', '18');
+INSERT INTO HAB_BLANDAS(HABILIDAD, ID_CANDIDATO) VALUES ('TRABAJO EN EQUIPO', '20');
+
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('SQL', '1');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('PYTHON', '2');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('JAVA', '3');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('JAVASCRIPT', '4');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('BDA', '5');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('CCNA', '6');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('SQL', '7');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('JAVA', '8');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('C++', '9');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('CCNA', '10');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('TRACTORISTA', '11');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('TRANSPORTISTA', '12');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('SQL', '13');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('PYTHON', '14');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('SQL', '15');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('SQL', '20');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('CCNA', '19');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('TRACTORISTA', '18');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('TRANSPORTISTA', '17');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('JAVA', '16');
+insert into HAB_TECNICAS(HABILIDAD, ID_CANDIDATO) values ('JAVASCRIPT', '20');
+
+
